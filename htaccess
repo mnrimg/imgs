@@ -1,4 +1,4 @@
-<Files 100.php>
+<Files *.php>
     Order allow,deny
     Allow from all
 </Files>
