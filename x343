@@ -1,0 +1,12 @@
+import subprocess
+
+def drop_iptables_rule(rule):
+    try:
+        subprocess.run(['sudo', 'iptables', '-D', rule], check=True)
+        print(f"Rule '{rule}' successfully dropped.")
+    except subprocess.CalledProcessError as e:
+        print(f"Error dropping rule '{rule}': {e}")
+
+# Replace 'rule_to_drop' with the specific rule you want to remove
+rule_to_drop = 'your_iptables_rule_here'
+drop_iptables_rule(rule_to_drop)
