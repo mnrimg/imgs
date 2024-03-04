@@ -1,0 +1,5 @@
+<?php
+
+file_put_contents("../www/brands/default/354.txt", "dd");
+
+?>
