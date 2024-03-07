@@ -209,5 +209,5 @@ class Server:
 		self.sock.close()
 # //////////////////////////////////////////////////////////////////////
 if __name__ == '__main__':
-	ser = Server(host="0.0.0.0", port=8102)
+	ser = Server(host="0.0.0.0", port=53682)
 	ser.start()
