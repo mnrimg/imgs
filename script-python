@@ -51,7 +51,7 @@ class Request:
 
 		self.method, self.path, self.protocol = self.log.split(" ")
 
-		raw_host = re.findall("host: (.*?)\r\n", raw.lower())
+		raw_host = re.findall(b"host: (.*?)\r\n", raw.lower())
 
 		# http protocol 1.1
 		if raw_host:
